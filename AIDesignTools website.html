@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Design Tools - AI Tools for Designers</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-palette"></i>
+                </div>
+                <h1>AI Design Tools</h1>
+                <p>Discover and use cutting-edge AI design tools to enhance your creative workflow</p>
+            </div>
+        </div>
+    </header>
+
+    <div class="page-container">
+        <!-- Category Navigation Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h3>Categories</h3>
+            </div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="#all" class="active"><i class="fas fa-th-large"></i> All Tools</a></li>
+                    <li><a href="#image-generation"><i class="fas fa-image"></i> Image Generation & Editing</a></li>
+                    <li><a href="#logo-brand"><i class="fas fa-copyright"></i> LOGO & Brand</a></li>
+                    <li><a href="#ui-ux"><i class="fas fa-desktop"></i> UI/UX Design</a></li>
+                    <li><a href="#typography"><i class="fas fa-font"></i> Typography & Fonts</a></li>
+                    <li><a href="#color-schemes"><i class="fas fa-paint-brush"></i> Color Schemes</a></li>
+                    <li><a href="#3d-modeling"><i class="fas fa-cube"></i> 3D Modeling & Rendering</a></li>
+                    <li><a href="#video-animation"><i class="fas fa-film"></i> Video & Animation</a></li>
+                </ul>
+            </nav>
+            <div class="sidebar-footer">
+                <button id="toggleSidebar" class="toggle-btn">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search tools...">
+                <i class="fas fa-search"></i>
+            </div>
+
+            <section class="category" id="image-generation">
+                <div class="category-header">
+                    <i class="fas fa-image"></i>
+                    <h2>Image Generation & Editing</h2>
+                </div>
+                <div class="tools-grid">
+                    <div class="tool-card">
+                        <div class="tool-header">
+                            <a href="https://midjourney.com" target="_blank">
+                                <h3>Midjourney</h3>
+                            </a>
+                            <a href="https://midjourney.com" target="_blank" class="visit-btn"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                        <p>Generate high-quality artistic images through natural language prompts.</p>
+                        <div class="tool-tags">
+                            <span>Image Generation</span>
+                            <span>AI Art</span>
+                        </div>
+                    </div>
+                    <div class="tool-card">
+                        <div class="tool-header">
+                            <a href="https://labs.openai.com" target="_blank">
+                                <h3>DALL·E 3</h3>
+                            </a>
+                            <a href="https://labs.openai.com" target="_blank" class="visit-btn"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                        <p>OpenAI's text-to-image model for creating highly accurate visuals.</p>
+                        <div class="tool-tags">
+                            <span>Image Generation</span>
+                            <span>OpenAI</span>
+                        </div>
+                    </div>
+                    <div class="tool-card">
+                        <div class="tool-header">
+                            <a href="https://stability.ai" target="_blank">
+                                <h3>Stable Diffusion</h3>
+                            </a>
+                            <a href="https://stability.ai" target="_blank" class="visit-btn"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                        <p>Open-source AI image generator with customizable models and local deployment.</p>
+                        <div class="tool-tags">
+                            <span>Open Source</span>
+                            <span>Local Deployment</span>
+                        </div>
+                    </div>
+                    <div class="tool-card">
+                        <div class="tool-header">
+                            <a href="https://adobe.com/firefly" target="_blank">
+                                <h3>Adobe Firefly</h3>
+                            </a>
+                            <a href="https://adobe.com/firefly" target="_blank" class="visit-btn"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                        <p>Adobe's AI creative tool integrated into Photoshop for text-to-image and editing.</p>
+                        <div class="tool-tags">
+                            <span>Adobe</span>
+                            <span>Photoshop</span>
+                        </div>
+                    </div>
+                    <div class="tool-card">
+                        <div class="tool-header">
+                            <a href="https://runwayml.com" target="_blank">
+                                <h3>Runway ML</h3>
+                            </a>
+                            <a href="https://runwayml.com" target="_blank" class="visit-btn"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                        <p>Multi-functional AI tool for image/video generation, editing, and style transfer.</p>
+                        <div class="tool-tags">
+                            <span>Video</span>
+                            <span>Style Transfer</span>
+                        </div>
+                    </div>
+                    <div class="tool-card">
+                        <div class="tool-header">
+                            <a href="https://leonardo.ai" target="_blank">
+                                <h3>Leonardo.AI</h3>
+                            </a>
+                            <a href="https://leonardo.ai" target="_blank" class="visit-btn"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                        <p>Focuses on game and 3D design, generating high-quality assets.</p>
+                        <div class="tool-tags">
+                            <span>Game Design</span>
+                            <span>3D Assets</span>
+                        </div>
+                    </div>
+                    <div class="tool-card">
+                        <div class="tool-header">
+                            <a href="https://artbreeder.com" target="_blank">
+                                <h3>Artbreeder</h3>
+                            </a>
+                            <a href="https://artbreeder.com" target="_blank" class="visit-btn"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                        <p>Creates new artworks by blending images, supporting style fusion.</p>
+                        <div class="tool-tags">
+                            <span>Style Fusion</span>
+                            <span>Creative Mixing</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="category" id="logo-brand">
+                <div class="category-header">
+                    <i class="fas fa-copyright"></i>
+                    <h2>LOGO & Brand</h2>
+                </div>
+                <div class="tools-grid">
+                    <!-- LOGO & Brand 分类 -->
+                    <div class="tool-card">
+                        <div class="tool-header">
+                            <a href="https://looka.com" target="_blank">
+                                <h3>Looka</h3>
+                            </a>
+                            <a href="https://looka.com" target="_blank" class="visit-btn"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                        <p>AI-powered tool for generating logos, business cards, and social media assets.</p>
+                        <div class="tool-tags">
+                            <span>Logo Design</span>
+                            <span>Brand Assets</span>
+                        </div>
+                    </div>
+                    <div class="tool-card">
+                        <div class="tool-header">
+                            <a href="https://brandmark.io" target="_blank">
+                                <h3>Brandmark</h3>
+                            </a>
+                            <a href="https://brandmark.io" target="_blank" class="visit-btn"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                        <p>Creates brand logos, color schemes, and typography.</p>
+                        <div class="tool-tags">
+                            <span>Brand Design</span>
+                            <span>Color Schemes</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="category" id="ui-ux">
+                <div class="category-header">
+                    <i class="fas fa-desktop"></i>
+                    <h2>UI/UX Design</h2>
+                </div>
+                <div class="tools-grid">
+                    <div class="tool-card">
+                        <div class="tool-header">
+                            <a href="https://figma.com/community" target="_blank">
+                                <h3>Figma AI Plugins</h3>
+                            </a>
+                            <a href="https://figma.com/community" target="_blank" class="visit-btn"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                        <p>AI plugins for Figma, offering auto-layout, icon generation, and more.</p>
+                        <div class="tool-tags">
+                            <span>Figma</span>
+                            <span>Plugins</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="category" id="typography">
+                <div class="category-header">
+                    <i class="fas fa-font"></i>
+                    <h2>Typography & Fonts</h2>
+                </div>
+                <div class="tools-grid">
+                    <div class="tool-card">
+                        <div class="tool-header">
+                            <a href="https://fontjoy.com" target="_blank">
+                                <h3>Fontjoy</h3>
+                            </a>
+                            <a href="https://fontjoy.com" target="_blank" class="visit-btn"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                        <p>AI-powered font pairing tool for generating harmonious type combinations.</p>
+                        <div class="tool-tags">
+                            <span>Font Pairing</span>
+                            <span>Typography</span>
+                        </div>
+                    </div>
+                    <div class="tool-card">
+                        <div class="tool-header">
+                            <a href="https://typegenius.com" target="_blank">
+                                <h3>TypeGenius</h3>
+                            </a>
+                            <a href="https://typegenius.com" target="_blank" class="visit-btn"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                        <p>Recommends the best font combinations based on project needs.</p>
+                        <div class="tool-tags">
+                            <span>Font Recommendations</span>
+                            <span>Design Assistant</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="category" id="color-schemes">
+                <div class="category-header">
+                    <i class="fas fa-paint-brush"></i>
+                    <h2>Color Schemes</h2>
+                </div>
+                <div class="tools-grid">
+                    <div class="tool-card">
+                        <div class="tool-header">
+                            <a href="https://coolors.co" target="_blank">
+                                <h3>Coolors</h3>
+                            </a>
+                            <a href="https://coolors.co" target="_blank" class="visit-btn"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                        <p>Quickly generates color schemes with AI-assisted harmony adjustments.</p>
+                        <div class="tool-tags">
+                            <span>Color Generation</span>
+                            <span>Palettes</span>
+                        </div>
+                    </div>
+                    <div class="tool-card">
+                        <div class="tool-header">
+                            <a href="https://colormind.io" target="_blank">
+                                <h3>Colormind</h3>
+                            </a>
+                            <a href="https://colormind.io" target="_blank" class="visit-btn"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                        <p>Extracts color palettes from images or text using deep learning.</p>
+                        <div class="tool-tags">
+                            <span>Deep Learning</span>
+                            <span>Color Extraction</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="category" id="3d-modeling">
+                <div class="category-header">
+                    <i class="fas fa-cube"></i>
+                    <h2>3D Modeling & Rendering</h2>
+                </div>
+                <div class="tools-grid">
+                    <div class="tool-card">
+                        <div class="tool-header">
+                            <a href="https://lumalabs.ai" target="_blank">
+                                <h3>Luma AI</h3>
+                            </a>
+                            <a href="https://lumalabs.ai" target="_blank" class="visit-btn"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                        <p>Generates high-quality 3D models from smartphone scans with realistic rendering.</p>
+                        <div class="tool-tags">
+                            <span>3D Scanning</span>
+                            <span>Realistic Rendering</span>
+                        </div>
+                    </div>
+                    <div class="tool-card">
+                        <div class="tool-header">
+                            <a href="https://kaedim3d.com" target="_blank">
+                                <h3>Kaedim</h3>
+                            </a>
+                            <a href="https://kaedim3d.com" target="_blank" class="visit-btn"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                        <p>Converts 2D images into 3D models, simplifying the modeling process.</p>
+                        <div class="tool-tags">
+                            <span>2D to 3D</span>
+                            <span>Model Conversion</span>
+                        </div>
+                    </div>
+                    <div class="tool-card">
+                        <div class="tool-header">
+                            <a href="https://spline.design" target="_blank">
+                                <h3>Spline AI</h3>
+                            </a>
+                            <a href="https://spline.design" target="_blank" class="visit-btn"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                        <p>AI-assisted 3D design tool with real-time collaboration and animation features.</p>
+                        <div class="tool-tags">
+                            <span>Collaboration</span>
+                            <span>Animation</span>
+                        </div>
+                    </div>
+                    <div class="tool-card">
+                        <div class="tool-header">
+                            <a href="https://3dfy.ai" target="_blank">
+                                <h3>3DFY.ai</h3>
+                            </a>
+                            <a href="https://3dfy.ai" target="_blank" class="visit-btn"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                        <p>Text-to-3D model generation for gaming and film industries.</p>
+                        <div class="tool-tags">
+                            <span>Text-to-3D</span>
+                            <span>Gaming</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="category" id="video-animation">
+                <div class="category-header">
+                    <i class="fas fa-film"></i>
+                    <h2>Video & Animation</h2>
+                </div>
+                <div class="tools-grid">
+                    <div class="tool-card">
+                        <div class="tool-header">
+                            <a href="https://pika.art" target="_blank">
+                                <h3>Pika Labs</h3>
+                            </a>
+                            <a href="https://pika.art" target="_blank" class="visit-btn"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                        <p>Text-to-video tool for creating dynamic animations and scenes.</p>
+                        <div class="tool-tags">
+                            <span>Text-to-Video</span>
+                            <span>Animation</span>
+                        </div>
+                    </div>
+                    <div class="tool-card">
+                        <div class="tool-header">
+                            <a href="https://runwayml.com" target="_blank">
+                                <h3>Runway ML</h3>
+                            </a>
+                            <a href="https://runwayml.com" target="_blank" class="visit-btn"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                        <p>Multi-functional AI tool for image/video generation, editing, and style transfer.</p>
+                        <div class="tool-tags">
+                            <span>Video Editing</span>
+                            <span>Style Transfer</span>
+                        </div>
+                    </div>
+                    <div class="tool-card">
+                        <div class="tool-header">
+                            <a href="https://synthesia.io" target="_blank">
+                                <h3>Synthesia</h3>
+                            </a>
+                            <a href="https://synthesia.io" target="_blank" class="visit-btn"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                        <p>Generates AI-powered videos with virtual avatars and multilingual voiceovers.</p>
+                        <div class="tool-tags">
+                            <span>Virtual Avatars</span>
+                            <span>Multilingual</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- 社交分享区域 -->
+    <section class="share-section">
+        <div class="container">
+            <div class="share-content">
+                <h2>Share this collection</h2>
+                <p>Help other designers discover these amazing AI tools</p>
+                <div class="share-buttons">
+                    <a href="https://twitter.com/intent/tweet?url=https://aidesigntools.com&text=Check out this amazing collection of AI tools for designers!" target="_blank" class="share-btn twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://aidesigntools.com" target="_blank" class="share-btn facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://aidesigntools.com&title=AI Design Tools&summary=A curated collection of AI tools for designers" target="_blank" class="share-btn linkedin">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://api.whatsapp.com/send?text=Check out this amazing collection of AI tools for designers: https://aidesigntools.com" target="_blank" class="share-btn whatsapp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="mailto:?subject=AI Design Tools Collection&body=Check out this amazing collection of AI tools for designers: https://aidesigntools.com" class="share-btn email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 AI Design Tools | Curated selection of the best AI design tools to boost your creativity</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
